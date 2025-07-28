@@ -4,7 +4,7 @@
 @import "minima";
 
 :root {
-  --background-color: #1f2a33;  // dark bluish-gray
+  --background-color: #1b282d;  // dark bluish-gray
   --text-color: #ffffff;        // white
   --link-base-color: #93c5fd;   // soft light blue for links
   --brand-color: #5fa8d3;       // faint bluish accent
@@ -13,10 +13,19 @@
   --code-text-color: #ffffff;
 }
 
+@font-face {
+  font-family: '0xProto-Regular';
+  src: url('/assets/fonts/0xProto-Regular.woff2') format('woff2'),
+       url('/assets/fonts/0xProto-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: '0xProto-Regular', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,8 +41,89 @@ code, pre {
   color: var(--code-text-color);
 }
 
-.site-header, .site-footer {
-  background-color: #1a232c;
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.site-header {
+  padding: 1rem 2rem;
+  background-color: #1b282d;
   color: var(--text-color);
+  margin: auto;
+  width: 65%;
+  border: none;
+  box-shadow: none;
+}
+
+.site-nav-group {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0 4rem 0 0;
+  color: var(--text-color);
+}
+
+.site-title.blink::after {
+  content: '|';
+  margin-left: 0.2rem;
+  animation: blink 1s step-start infinite;
+  color: var(#8b27f5);
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.site-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--link-base-color);
+}
+
+.main-text {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.footer-links {
+  padding: 0 1.5rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+}
+
+.site-footer {
+  background-color: #1b282d;
+  color: var(--text-color);
+  padding: 1rem 0;
+  border: none;
+  box-shadow: none;
+}
+
+@media (max-width: 600px) {
+  .nav-container,
+  .footer-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
 }
 

@@ -1,0 +1,12 @@
+<header class="site-header">
+  <div class="site-nav-group">
+    {% if page.cursor-blink %}
+    <span class="site-title blink">{{ site.title }}</span>
+    {% endif %}
+    <nav class="site-nav">
+      <a href="{{ '/posts/' | relative_url }}">Posts</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+    </nav>
+  </div>
+</header>
+
