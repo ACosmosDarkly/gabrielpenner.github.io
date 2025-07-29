@@ -4,10 +4,12 @@
 @import "minima";
 
 :root {
-  --background-color: #1b282d;  // dark bluish-gray
-  --text-color: #ffffff;        // white
-  --link-base-color: #93c5fd;   // soft light blue for links
-  --brand-color: #5fa8d3;       // faint bluish accent
+  --background-color: #0f0f0f;
+  --text-color: #ffffff;
+  --visited-color: #d8ab4e;
+  --accent-color: #11d400;
+  --link-base-color: #93c5fd;
+  --brand-color: #5fa8d3;
   --header-color: #e0e0e0;
   --code-background-color: #2a2a2a;
   --code-text-color: #ffffff;
@@ -28,12 +30,73 @@ body {
   font-family: '0xProto-Regular', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+.page-content a,
+.main-text a,
+.footer-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.page-content a:visited,
+.main-text a:visited,
+.footer-links a:visited {
+  color: var(--visited-color);
+}
+
+.page-content a:hover,
+.main-text a:hover,
+.footer-links a:hover {
+  color: var(--accent-color);
+}
+
+.post-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.post-list li {
+  margin-bottom: 0.75rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: var(--header-color);
 }
 
 a {
-  color: var(--link-base-color);
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.2 ease-in-out;
+}
+
+.site-nav a { 
+  height: 45px;
+  margin: 0 0 8px;
+  position: relative;
+  color: var(--text-color);
+  transition: color 0.2s ease-in-out;
+}
+
+.site-nav a:hover {
+  color: var(--accent-color);
+}
+
+.site-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.1em;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent-color);
+  border-radius: 1px;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.site-nav a:hover::after {
+  transform: scaleX(1);
 }
 
 code, pre {
@@ -52,7 +115,6 @@ code, pre {
 
 .site-header {
   padding: 1rem 2rem;
-  background-color: #1b282d;
   color: var(--text-color);
   margin: auto;
   width: 65%;
@@ -77,7 +139,7 @@ code, pre {
   content: '|';
   margin-left: 0.2rem;
   animation: blink 1s step-start infinite;
-  color: var(#8b27f5);
+  color: var(--accent-color);
 }
 
 @keyframes blink {
@@ -93,7 +155,7 @@ code, pre {
 
 .site-nav a {
   text-decoration: none;
-  color: var(--link-base-color);
+  color: var(--text-color);
 }
 
 .main-text {
@@ -111,7 +173,6 @@ code, pre {
 }
 
 .site-footer {
-  background-color: #1b282d;
   color: var(--text-color);
   padding: 1rem 0;
   border: none;
