@@ -1,17 +1,9 @@
 ---
-layout: page
+layout: about
 title: About
+wide_layout: true
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+![My portrait](/images/profile.jpg){: .profile-photo }
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+My name is Gabriel Penner. I'm a Cybersecurity Engineer working on securing assets both in space and on the ground. My goal is to be done with school so I can focus on trying to have goals again! In all honesty, I love working in the cyber field and want to dig deeper into vulnerability analysis, malware, and anything that makes a computer tick. 

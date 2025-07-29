@@ -103,34 +103,27 @@ code, pre {
   color: var(--code-text-color);
 }
 
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
 .site-header {
-  padding: 1rem 2rem;
+  padding: 1rem 0;
   color: var(--text-color);
-  margin: auto;
-  width: 65%;
+  width: 100%;
   border: none;
   box-shadow: none;
 }
 
 .site-nav-group {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 1.5rem;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .site-title {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-decoration: none;
-  padding: 0 4rem 0 0;
+  padding: 0 8rem 0 0;
   color: var(--text-color);
 }
 
@@ -149,12 +142,35 @@ code, pre {
 
 .site-nav {
   display: flex;
-  gap: 1rem;
+  font-size: 1.2rem;
+  gap: 1.5rem;
 }
 
 .site-nav a {
   text-decoration: none;
   color: var(--text-color);
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.nav-toggle-label span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: var(--text-color);
+  border-radius: 2px;
 }
 
 .main-text {
@@ -174,26 +190,65 @@ code, pre {
 }
 
 .footer-links {
-  padding: 0 1.5rem;
-  max-width: 1280px;
-  margin: 0 auto;
   display: flex;
-  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  gap: 2rem;
 }
 
 .site-footer {
   color: var(--text-color);
-  padding: 1rem 0;
+  padding: 1rem 2rem;
   border: none;
   box-shadow: none;
 }
 
+.profile-photo {
+  float: left;
+  margin: 0 1rem 1rem 0;
+  max-width: 175px;
+  width: auto;
+  height: auto;
+  border-radius: 6px;
+  shape-outside: margin-box;
+  border: 1px solid #f2f3f3;
+  padding: 6px;
+}
+
 @media (max-width: 600px) {
-  .nav-container,
-  .footer-links {
+  .site-nav {
+    background-color: var(--background-color);
+    display: none;
+    margin-right: 0.75rem;
+    align-self: flex-end;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
+    border: none;
+    gap: 0;
+  }
+
+  .site-nav a {
+    line-height: 2.2rem;
+    height: auto;
+    margin: 8px 0;
+  }
+
+  .nav-toggle:checked + .nav-toggle-label + .site-nav {
+    display: flex;
+    margin-top: 3.5rem;
+    border: 1px solid var(--visited-color);
+    padding: 0 1rem;
+  }
+
+  .nav-toggle-label {
+    display: flex;
+  }
+
+  .site-nav-group {
+    margin-right: 0.75rem;
+    flex-direction: row;
   }
 }
 
