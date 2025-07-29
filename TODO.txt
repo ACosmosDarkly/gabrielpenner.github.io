@@ -1,8 +1,0 @@
-#TODO List (in no particular order)
-
-1) Figure out the color scheme
-2) Decide if I actually want the cursor blink
-3) Add a couple posts and figure out nav
-4) Make sure it looks OK on mobile
-5) ?
-6) Profit
