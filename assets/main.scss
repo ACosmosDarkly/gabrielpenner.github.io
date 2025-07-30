@@ -8,7 +8,7 @@
   --text-color: #ffffff;
   --visited-color: #d8ab4e;
   --accent-color: #11d400;
-  --link-base-color: #93c5fd;
+  --link-base-color: #c53211;
   --brand-color: #5fa8d3;
   --header-color: #e0e0e0;
   --code-text-color: #ffffff;
@@ -29,12 +29,22 @@ body {
   font-family: '0xProto-Regular', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-.page-content a,
+.reading-content h2 {
+  margin: 3rem 0 1rem 0;
+  padding-bottom: 0.1rem;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.page-content p,
 .main-text a,
 .footer-links a {
   color: var(--text-color);
   text-decoration: none;
   transition: color 0.2s ease-in-out;
+}
+
+.page-content a {
+  text-decoration: underline;
 }
 
 .page-content a:visited,
@@ -115,9 +125,9 @@ code, pre {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1800px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  max-width: clamp(640px, 80vw, 1600px);
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 4rem);
 }
 
 .site-title {
@@ -151,6 +161,14 @@ code, pre {
   color: var(--text-color);
 }
 
+.site-nav-group.nav-right-align {
+  justify-content: flex-end;
+}
+
+.site-nav-group.nav-right-align .site-nav {
+  margin-left: auto;
+}
+
 .nav-toggle {
   display: none;
 }
@@ -174,9 +192,9 @@ code, pre {
 }
 
 .main-text {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 1rem;
+  max-width: clamp(640px, 50vw, 1600px);
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 4rem);
 }
 
 .highlight {
@@ -193,9 +211,9 @@ code, pre {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  max-width: 1800px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  max-width: clamp(640px, 80vw, 1600px);
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 4rem);
   gap: 2rem;
 }
 

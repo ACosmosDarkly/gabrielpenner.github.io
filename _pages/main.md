@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Home
-wide_layout: true
+nav: true
 cursor-blink: true
+permalink: /
 ---
 
 <ul class="post-list">

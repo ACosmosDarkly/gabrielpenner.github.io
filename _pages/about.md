@@ -1,7 +1,8 @@
 ---
-layout: about
+layout: page 
 title: About
-wide_layout: true
+nav: true
+permalink: /about/
 ---
 
 ![My portrait](/images/profile.jpg){: .profile-photo }

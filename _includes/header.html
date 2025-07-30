@@ -1,7 +1,7 @@
 <header class="site-header">
-  <div class="site-nav-group">
+  <div class="site-nav-group{% unless page.cursor-blink %} nav-right-align{% endunless %}">
     {% if page.cursor-blink %}
-    <span class="site-title blink">{{ site.title }}</span>
+      <span class="site-title blink">{{ site.title }}</span>
     {% endif %}
 
     <input type="checkbox" id="nav-toggle" class="nav-toggle" />
@@ -12,9 +12,26 @@
     </label>
 
     <nav class="site-nav">
-      <a href="{{ '/' | relative_url}}">Home</a>
-      <a href="{{ '/about/' | relative_url }}">About</a>
+      {% assign nav_links = site.pages | where: "nav", true %}
+      {% assign home_link = nav_links | where: "title", "Home" | first %}
+      {% assign about_link = nav_links | where: "title", "About" | first %}
+      {% assign other_links = nav_links | where_exp: "l", "l.title != 'Home' and l.title != 'About'" %}
+
+      {% if home_link and home_link.url != page.url %}
+        <a href="{{ home_link.url | relative_url }}">{{ home_link.title }}</a>
+      {% endif %}
+
+      {% for link in other_links %}
+        {% unless link.url == page.url %}
+          <a href="{{ link.url | relative_url }}">{{ link.title }}</a>
+        {% endunless %}
+      {% endfor %}
+
+      {% if about_link and about_link.url != page.url %}
+        <a href="{{ about_link.url | relative_url }}">{{ about_link.title }}</a>
+      {% endif %}
     </nav>
   </div>
 </header>
+
 

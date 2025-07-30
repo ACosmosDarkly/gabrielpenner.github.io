@@ -1,8 +1,8 @@
 ---
 title: 'On Book Summaries'
 date: 2021-03-14
+nav: true
 permalink: /posts/2021/03/bookfutures/
-excerpt: Geetings all! I wanted to say that I am taking book updates off the main page...
 ---
 
 Greetings all! I wanted to say that I am taking book updates off of the main page and just posting them to my "Book Summaries" page. I'm thinking it's going to get awfully crowded if I start posting every book summary I write on my home page. I have probably read or listened to about 40 or 50 books since I started listening to audio books in 2017. I'll need to count, and it's short of where I wish I could be which is more like 20 to 30 books every year. It's not that I never read before that, I just didn't read that much, and honestly, audio books are one of the best investments I've ever made. I listen to fiction, non-fiction, audio dramas, all of it. The only downside to audio books is that I usually listen while I'm driving and can't take notes I sometimes wish so desperately to do. Still, despite what I miss out on in notes, I want to share some of these books and the basics of their premise in the hopes that others will be persuaded into reading them as well.
