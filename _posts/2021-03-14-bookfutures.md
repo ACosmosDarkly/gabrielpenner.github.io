@@ -1,7 +1,9 @@
 ---
+layout: page
 title: 'On Book Summaries'
 date: 2021-03-14
 nav: true
+wide_layout: true
 permalink: /posts/2021/03/bookfutures/
 ---
 

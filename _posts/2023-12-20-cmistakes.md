@@ -1,6 +1,8 @@
 ---
-title: 'Learning from my mistakes in C programming'
+layout: page
+title: 'Learning from my mistakes in C'
 date: 2023-12-20
+wide_layout: true
 permalink: /posts/2023/12/cmistakes/
 excerpt: An exercise in learning from my mistakes while learning C programming
 ---
@@ -116,5 +118,3 @@ Sources used:
 [Tutorials Point - fwrite()](https://www.tutorialspoint.com/c_standard_library/c_function_fwrite.htm)
 
 [Man page for write(2)](https://www.man7.org/linux/man-pages/man2/write.2.html)
-
-ChatGPT

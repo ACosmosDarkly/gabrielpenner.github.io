@@ -1,8 +1,9 @@
 ---
+layout: page
 title: 'OMSCS at the Halfway Point: Thoughts Thus Far'
 date: 2025-05-02
+wide_layout: true
 permalink: /posts/2025/05/omscs50pctreview/
-excerpt: "I'm just over halfway done with OMSCS. Here are my thoughts on the program and courses so far."
 ---
 
 ## Overview

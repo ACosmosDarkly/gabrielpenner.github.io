@@ -1,6 +1,8 @@
 ---
+layout: page
 title: 'My Experience In the NYU Bridge'
 date: 2023-08-14
+wide_layout: true
 permalink: /posts/2023/08/nyubridge/
 excerpt: "A short summary on my experience with the NYU Bridge and what you can expect"
 ---

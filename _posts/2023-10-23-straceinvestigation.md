@@ -1,6 +1,8 @@
 ---
+layout: page
 title: 'Process Investigation with strace'
 date: 2023-10-23
+wide_layout: true
 permalink: /posts/2023/10/straceinvestigation/
 excerpt: Using strace to uncover the reasons behind stuck processes
 ---

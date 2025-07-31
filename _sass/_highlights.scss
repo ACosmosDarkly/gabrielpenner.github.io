@@ -1,0 +1,189 @@
+/*----- Text inline Code -----*/
+
+.language-plaintext.highlighter-rouge {
+  color: $bright-gold;
+  background-color: $code-gray-1;
+}
+
+/*----- colors from https://gist.github.com/HangX-Ma/20d155a196efacf565e86467094aba1e -------*/
+$highlight-chalky         : #e5c07b;
+$highlight-coral          : #ef596f;
+$highlight-dark           : #5c6370;
+$highlight-error          : #f44747;
+$highlight-fountainBlue   : #2bbac5;
+$highlight-green          : #89ca78;
+$highlight-invalid        : #ffffff;
+$highlight-lightDark      : #7f848e;
+$highlight-lightWhite     : #abb2bf;
+$highlight-malibu         : #61afef;
+$highlight-purple         : #d55fde;
+$highlight-whiskey        : #d19a66;
+$highlight-deepRed        : #be5046;
+$highlight-background     : #282c34;
+
+/*----- Code table and err override -----*/
+
+.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .err {
+  color: $text-white;
+  background-color: $code-gray-1;
+}
+
+/*----- Generics *-----*/
+
+// Delete / Insert
+.highlight .gd, .highlight .gi {
+  color: #000000;
+}
+
+// Delete Specific
+.highlight .gd .x {
+  color: #000000;
+  background-color: #faa;
+}
+
+// Insert Specific
+.highlight .gi .x {
+  color: #000000;
+  background-color: #afa;
+}
+
+// Error / Traceback
+.highlight .gr, .highlight .gt {
+  color: #a00;
+}
+
+// Heading / Builtin Pseudo
+.highlight .gh, .highlight .bp {
+  color: #999;
+}
+
+// Output
+.highlight .go {
+  color: #888;
+}
+
+// Subheading
+.highlight .gu {
+  color: #aaa;
+}
+
+// Whitespace
+.highlight .w {
+  color: #bbb;
+}
+
+// Prompt / Namespace / Path
+.highlight .gp, .highlight .nn, .highlight .nx {
+  color: $highlight-lightDark;
+}
+
+// Emphasis
+.highlight .ge {
+  font-style: italic;
+}
+
+// Strong
+.highlight .gs {
+  font-weight: bold;
+}
+
+/*----- Comments *-----*/
+
+// Single / Multiline / Default
+.highlight .c, .highlight .cm, .highlight .c1 {
+  color: #667689;
+  font-style: italic;
+}
+
+// Special
+.highlight .cs {
+  color: #667689;
+  font-style: italic;
+  font-weight: bold;
+}
+
+// Preprocessor
+.highlight .cp {
+  color: #ABB2BF;
+}
+
+/*----- Keywords *-----*/
+
+.highlight .k, .highlight .kc, .highlight .kt, .highlight .ni, .highlight .ss {
+  color: $highlight-purple;
+}
+
+.highlight .k {
+  font-weight: normal;
+}
+
+.highlight .kc, .highlight .kt {
+  font-weight: bold;
+}
+
+.highlight .kp, .highlight .ow {
+  font-weight: bold;
+}
+
+.highlight .kr, .highlight .kd {
+  color: #C678DD;
+}
+
+/*----- Literals: Numbers *-----*/
+
+.highlight .m, .highlight .mf, .highlight .mi, .highlight .mo, .highlight .il, .highlight .nb {
+  color: $highlight-whiskey;
+}
+
+.highlight .mh {
+  color: $highlight-fountainBlue;
+}
+
+/*----- Literals: Strings *-----*/
+
+.highlight .s, .highlight .s1, .highlight .s2 {
+  color: $highlight-green;
+}
+
+.highlight .sb, .highlight .sc, .highlight .sd, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx {
+  color: $highlight-coral;
+}
+
+.highlight .sr {
+  color: #009926;
+}
+
+/*----- Name-based Tokens *-----*/
+
+// Attribute / Class
+.highlight .na, .highlight .nc {
+  color: $highlight-chalky;
+}
+
+// Constant / Variable
+.highlight .no, .highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi {
+  color: $highlight-fountainBlue;
+}
+
+// Exception
+.highlight .ne {
+  color: $highlight-malibu;
+  font-weight: bold;
+}
+
+// Function
+.highlight .nf {
+  color: $highlight-malibu;
+}
+
+/*----- Operators & Punctuation *-----*/
+
+.highlight .o, .highlight .ow {
+  font-weight: bold;
+}
+
+.highlight .p {
+  color: #ABB2BF;
+}

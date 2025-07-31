@@ -1,6 +1,6 @@
 ---
 layout: reading
-title:
+title: Reading
 nav: true 
 permalink: /reading/
 --- 

@@ -1,6 +1,9 @@
 ---
+layout: page
 title: 'Doom 30th Anniversary'
 date: 2023-10-23
+wide_layout: true
+nav: true
 permalink: /posts/2023/12/doom30thanniversary
 excerpt: Doom's 30th birthday
 ---
