@@ -3,15 +3,23 @@
 
 @import "minima";
 
+$Proto-Font: '0xProto-Regular', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+$charcoal-black: #0f0f0f;
+$text-white: #ffffff;
+$bright-gold: #d8ab4e;
+$retro-green: #11d400;
+$brick-red: #c53211;
+$header-white: #e0e0e0;
+
+
 :root {
-  --background-color: #0f0f0f;
-  --text-color: #ffffff;
-  --visited-color: #d8ab4e;
-  --accent-color: #11d400;
-  --link-base-color: #c53211;
-  --brand-color: #5fa8d3;
-  --header-color: #e0e0e0;
-  --code-text-color: #ffffff;
+  --background-color: $charcoal-black;
+  --text-color: $text-white;
+  --visited-color: $bright-gold;
+  --accent-color: $retro-green;
+  --link-base-color: $bright-gold;
+  --header-color: $header-white;
 }
 
 @font-face {
@@ -24,21 +32,21 @@
 }
 
 body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  font-family: '0xProto-Regular', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: $charcoal-black;
+  color: $text-white;
+  font-family: $Proto-Font;
 }
 
 .reading-content h2 {
   margin: 3rem 0 1rem 0;
   padding-bottom: 0.1rem;
-  border-bottom: 1px solid var(--text-color);
+  border-bottom: 1px solid $text-white;
 }
 
 .page-content p,
 .main-text a,
 .footer-links a {
-  color: var(--text-color);
+  color: $text-white;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
 }
@@ -50,13 +58,13 @@ body {
 .page-content a:visited,
 .main-text a:visited,
 .footer-links a:visited {
-  color: var(--visited-color);
+  color: $bright-gold;
 }
 
 .page-content a:hover,
 .main-text a:hover,
 .footer-links a:hover {
-  color: var(--accent-color);
+  color: $bright-gold;
 }
 
 .post-list {
@@ -69,12 +77,12 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--header-color);
+  color: $header-white;
 }
 
 a {
   text-decoration: none;
-  color: var(--text-color);
+  color: $text-white;
   transition: color 0.2 ease-in-out;
 }
 
@@ -82,12 +90,12 @@ a {
   height: 45px;
   margin: 0 0 8px;
   position: relative;
-  color: var(--text-color);
+  color: $text-white;
   transition: color 0.2s ease-in-out;
 }
 
 .site-nav a:hover {
-  color: var(--accent-color);
+  color: $retro-green;
 }
 
 .site-nav a::after {
@@ -97,7 +105,7 @@ a {
   bottom: 0.1em;
   width: 100%;
   height: 2px;
-  background-color: var(--accent-color);
+  background-color: $retro-green;
   border-radius: 1px;
   transform: scaleX(0);
   transform-origin: center;
@@ -109,13 +117,13 @@ a {
 }
 
 code, pre {
-  background-color: var(--background-color);
-  color: var(--code-text-color);
+  background-color: $charcoal-black;
+  color: $text-white;
 }
 
 .site-header {
   padding: 1rem 0;
-  color: var(--text-color);
+  color: $text-white;
   width: 100%;
   border: none;
   box-shadow: none;
@@ -134,14 +142,14 @@ code, pre {
   font-size: 1.7rem;
   text-decoration: none;
   padding: 0 8rem 0 0;
-  color: var(--text-color);
+  color: $text-white;
 }
 
 .site-title.blink::after {
   content: '|';
   margin-left: 0.2rem;
   animation: blink 1s step-start infinite;
-  color: var(--accent-color);
+  color: $retro-green;
 }
 
 @keyframes blink {
@@ -158,7 +166,7 @@ code, pre {
 
 .site-nav a {
   text-decoration: none;
-  color: var(--text-color);
+  color: $text-white;
 }
 
 .site-nav-group.nav-right-align {
@@ -187,7 +195,7 @@ code, pre {
   display: block;
   height: 3px;
   width: 100%;
-  background: var(--text-color);
+  background: $text-white;
   border-radius: 2px;
 }
 
@@ -198,8 +206,8 @@ code, pre {
 }
 
 .highlight {
-  background-color: var(--background-color) !important;
-  color: var(--code-text-color) !important;
+  background-color: $charcoal-black !important;
+  color: $text-white !important;
   padding: 0.5rem;
   overflow-x: auto;
   border-radius: 6px;
@@ -218,7 +226,7 @@ code, pre {
 }
 
 .site-footer {
-  color: var(--text-color);
+  color: $text-white;
   padding: 1rem 2rem;
   border: none;
   box-shadow: none;
@@ -238,7 +246,7 @@ code, pre {
 
 @media (max-width: 600px) {
   .site-nav {
-    background-color: var(--background-color);
+    background-color: $charcoal-black;
     display: none;
     margin-right: 0.75rem;
     align-self: flex-end;
@@ -256,7 +264,7 @@ code, pre {
   .nav-toggle:checked + .nav-toggle-label + .site-nav {
     display: flex;
     margin-top: 3.5rem;
-    border: 1px solid var(--visited-color);
+    border: 1px solid $bright-gold;
     padding: 0 1rem;
   }
 
@@ -273,12 +281,12 @@ code, pre {
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
 .highlight, .highlight .w {
-  color: var(--code-text-color);
-  background-color: var(--background-color);
+  color: $text-white;
+  background-color: $charcoal-black;
 }
 .highlight .err {
-  color: var(--code-text-color);
-  background-color: var(--background-color);
+  color: $text-white;
+  background-color: $charcoal-black;
 }
 .highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
   color: #75715e;
