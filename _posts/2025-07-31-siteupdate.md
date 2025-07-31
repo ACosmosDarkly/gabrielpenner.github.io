@@ -12,10 +12,10 @@ My first site was a fork of the [Academic Pages](https://github.com/academicpage
 
 But I wanted something different, and I wanted it to be something I created. The Academic Pages fork turned out to be too much of a beast for me to tweak to my liking. 
 
-To be fair, I'm still using a template of sorts. The Jeykll [Minima](https://github.com/jekyll/minima) template is what's used when you create a new basic page using the `jeykll new {site name}` command. It builds out the bones and some basic html and css that you can use right out of the box. It's just enough that I don't have to make the boilerplate html and css from scratch, but just a few tweaks turns it into something that feels more "mine" and less someone else's code that I'm mangling badly.
+I'm still using a template of sorts based on [Jeykll Minima](https://github.com/jekyll/minima). The site structure created by Jeykll is very basic, so a lot of the site CSS comes from the minima gem (a Ruby library) which is stored in a different directory. This makes adding and editing the webpage so much easier (at least for me) because I'm not getting bogged down in existing formatting syntax. I just override any existing CSS in a new main.scss file as necessary, and add the page layouts that I want to make everything look the way I want it. The minima template just helps me get started. 
 
-The new site is pretty basic. No JS, and not a lot to maintain, which the goal for this site. I want things to be straightforward and to the point, and I want updates to be as quick and clean as possible. Eventually, I'd like to automate the publishing process going from Obsidian, where I do a lot of my draft writing, to my GitHub page: add, commit, push, done, all automatically.
+Eventually I want to automoate the publishing process to go from Obsidian (where I do most of my writing) to the site posts and add, commit, push to GitHub in one step. I want it all to be seamless.
 
-I hope the new site looks alright, and if you have feedback, you know where to find me! I *will* be back much sooner this time!
+Anyway, I hope you like the new look! I'll be back soon!
 
--G
+-G 

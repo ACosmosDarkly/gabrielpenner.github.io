@@ -1,11 +1,11 @@
 ---
 layout: reading
-title: Reading
+title:
 nav: true 
 permalink: /reading/
 --- 
 
-## Currently Reading
+<h2 class="special-h2">Currently Reading</h2>
 
 Understanding Cognitive Biases - Alexander B. Swan & The Great Courses 
 
