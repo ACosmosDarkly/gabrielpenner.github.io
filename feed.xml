@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2025-08-01T00:16:59+00:00</updated><id>/feed.xml</id><title type="html">Gabriel Penner</title><subtitle>This is where the pages live! Get you one! -Scooter</subtitle><entry><title type="html">Website Update</title><link href="/posts/2025/07/siteupdate/" rel="alternate" type="text/html" title="Website Update" /><published>2025-07-31T00:00:00+00:00</published><updated>2025-07-31T00:00:00+00:00</updated><id>/posts/2025/07/siteupdate</id><content type="html" xml:base="/posts/2025/07/siteupdate/"><![CDATA[<p>Hey there. It’s been a while. I haven’t written much lately because of the time commitment between work and school, but I’ve had this nagging thought in the back of my mind ever since I first started this website.</p>
+
+<p>My first site was a fork of the <a href="https://github.com/academicpages/academicpages.github.io">Academic Pages</a> template and it never felt quite right to me. The template is by no means bad, in fact, it’s a very good and straightforward option, perfect for an academic who wants a clean, built-out webpage that’s easy to customize. The customization, of course, mainly refers to things like the title, adding papers or blog posts, etc.</p>
+
+<p>But I wanted something different, and I wanted it to be something I created. The Academic Pages fork turned out to be too much of a beast for me to tweak to my liking.</p>
+
+<p>I’m still using a template of sorts based on <a href="https://github.com/jekyll/minima">Jeykll Minima</a>. The site structure created by Jeykll is very basic, so a lot of the site CSS comes from the minima gem (a Ruby library) which is stored in a different directory. This makes adding and editing the webpage so much easier (at least for me) because I’m not getting bogged down in existing formatting syntax. I just override any existing CSS in a new main.scss file as necessary, and add the page layouts that I want to make everything look the way I want it. The minima template just helps me get started.</p>
+
+<p>Eventually I want to automoate the publishing process to go from Obsidian (where I do most of my writing) to the site posts and add, commit, push to GitHub in one step. I want it all to be seamless.</p>
+
+<p>Anyway, I hope you like the new look! I’ll be back soon!</p>
+
+<p>-G</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Hey there. It’s been a while. I haven’t written much lately because of the time commitment between work and school, but I’ve had this nagging thought in the back of my mind ever since I first started this website.]]></summary></entry><entry><title type="html">OMSCS at the Halfway Point: Thoughts Thus Far</title><link href="/posts/2025/05/omscs50pctreview/" rel="alternate" type="text/html" title="OMSCS at the Halfway Point: Thoughts Thus Far" /><published>2025-05-02T00:00:00+00:00</published><updated>2025-05-02T00:00:00+00:00</updated><id>/posts/2025/05/omscs50pctreview</id><content type="html" xml:base="/posts/2025/05/omscs50pctreview/"><![CDATA[<h2 id="overview">Overview</h2>
+
+<p>In celebration of being (over) 50% done with the program I decided to do a little review of my thoughts so far. I completed two courses this Spring 2025 semester, those being Software Development Process (SDP) and Artificial Intelligence, Ethics, and Society (AIES), bringing me past the 50% mark to 6 out of 10 courses completed. My specialization is in <em>Computing Systems</em> and the requirements for it can be found <a href="https://omscs.gatech.edu/specialization-computing-systems">here</a>. The courses I’ve taken so far are:</p>
+
+<ul>
+  <li><a href="https://omscs6750.gatech.edu/">Human Computer Interaction (HCI)</a></li>
+  <li><a href="https://omscs.gatech.edu/cs-6200-introduction-operating-systems">Graduate Introduction to Operating Systems (GIOS)</a></li>
+  <li><a href="https://omscs.gatech.edu/cs-6250-computer-networks">Computer Networks (CN)</a></li>
+  <li><a href="https://omscs.gatech.edu/cs-6747-advanced-malware-analysis">Advanced Topics in Malware Analysis (AMA)</a></li>
+  <li><a href="https://omscs.gatech.edu/cs-6300-software-development-process">Software Development Process (SDP)</a></li>
+  <li><a href="https://omscs.gatech.edu/cs-6603-ai-ethics-and-society">Artificial Intelligence, Ethics, and Society (AIES)</a></li>
+</ul>
+
+<p>I’ve learned a great deal from this program so far, and it is as challenging as I was hoping it would be. I’ll give a quick rundown of each course and my thoughts on each, but I’ll save the in-depth course reviews for a later time. The courses are listed in the order that I took them starting with the Fall 2023 semester.</p>
+<h2 id="human-computer-interaction-hci">Human Computer Interaction (HCI)</h2>
+
+<p>This was the first course I took because I wanted to “test the waters” before jumping into some of the more challenging courses. HCI is more of a methodologies and research course than a programming course. There is a lot of paper writing about interface design, principles of design, and human interactions with systems. These designs are not strictly digital either but encompass both the physical and digital worlds.</p>
+
+<p>I thought this class was well put together and a great learning opportunity for those who haven’t been exposed to design concepts before. It was a little time-consuming and a lot of work every single week, but it was easy to keep up with as long as you worked on it consistently.</p>
+
+<h2 id="graduate-introduction-to-operating-systems-gios">Graduate Introduction to Operating Systems (GIOS)</h2>
+
+<p>GIOS was my introduction to an OMSCS course with heavy programming assignments, and my first “fairly difficult” course to boot. GIOS ranks #15 out of 81 courses for difficulty on <a href="https://www.omscentral.com/">omscentral.com</a> (as of Spring 2025) and for good reason. The course has 3 projects that are primarily in C or C++ and includes two exams.</p>
+
+<p>I had some exposure to C before taking this course and it was barely enough to get me by. I found the projects to be quite challenging with the first assignment taking me about 60 hours to complete over a few weeks. The other two projects were only somewhat less time-consuming.</p>
+
+<p>Despite its difficulty, it is a highly recommended course both by myself and others in online forums. As I mentioned though, don’t take the prerequisite knowledge of C and C++ lightly. You will be much better off if you spend some time learning the basics first.</p>
+
+<h2 id="computer-networks-cn">Computer Networks (CN)</h2>
+
+<p>Computer Networks (CN) is a core class that covers various networking algorithms, communications protocols, routing system architectures, and SDN technologies. I took CN over the summer of 2024, so the course was condensed by a few weeks making it a little more challenging, but only marginally so.</p>
+
+<p>CN is one of the easier courses in OMSCS and solely uses Python when programming is required. The programming assignments were semi-interesting and I have mixed feelings about them. Some assignments helped get the point across about how various algorithms work, but others felt more like parsing data for the sake of it. I did like learning the different methods threat actors use to take advantage of BGP and ASes during the Internet Security segment.</p>
+
+<p>This isn’t a bad course and I did learn more about the deeper structures of the internet than I would have otherwise. There’s a high likelihood you’ll never directly use any of the concepts learned here, but for someone like me in cybersecurity, it can be helpful to understand.</p>
+
+<h2 id="advanced-topics-in-malware-analysis-ama">Advanced Topics in Malware Analysis (AMA)</h2>
+
+<p>This course was one I knew from the outset I was going to take regardless of my specialization. I like learning about the low-level workings of computing systems and applications which is why I chose AMA and GIOS as must-haves for my course list. I was not disappointed as this course gives you a very solid overview of malware-specific topics and general reverse engineering topics.</p>
+
+<p>The first assignment after getting used to Ghidra is reverse engineering an entire malware sample and commenting on what is happening in every basic block. You wouldn’t do this in a real RE job, but you end up spending so much time looking at the assembly that you get a good feel for what code looks like at this level. The rest of the projects focus on various types of data and control flows which was something completely new to me.</p>
+
+<p>I enjoyed this course because it was something I already knew I was interested in, so I’m somewhat biased in that respect. I don’t think it emulates exactly what a job in RE would be like, but the foundational knowledge is there so if you’re interested too I would recommend it!</p>
+
+<h2 id="software-development-process">Software Development Process</h2>
+
+<p>I took this course in tandem with AI, Ethics, and Society over the Spring ‘25 semester. It was my first Java course in the program and one in which I had to make extensive use of OOP concepts as opposed to GIOS and C++ where I could get away with limited class usage. In addition to Java, you will also learn some intermediate Git concepts like branching, merging, and team sharing of code bases. I had some basic knowledge of these concepts already so it wasn’t hard to get up to speed on this one.</p>
+
+<p>Projects included creating Android apps using Android Studio and a 500 - 1000 LoC project that you’ll work with both as a black box and write from scratch. There is also the infamous assignment 6 which has the potential of taking you from an A to a B for the course. It’s an easy assignment to miss hard on and end up tanking your course score because of the 15% weight.</p>
+
+<p>I thought this course was okay, and if I liked my other options I probably wouldn’t have chosen this one. If you’re an experienced software engineer you might still learn something from it, but it is what I would consider an average software engineering course.</p>
+
+<h2 id="artificial-intelligence-ethics-and-society">Artificial Intelligence, Ethics, and Society</h2>
+
+<p>As mentioned above, this was one of my two courses over the Spring ‘25 semester. AIES is a part programming, part writing course that covers ethical considerations of Artificial Intelligence in society. You’ll examine various examples in real-world case studies and use AI and ML for small projects throughout the course to show the various biases that exist in these models.</p>
+
+<p>This course is considered one of the program’s easier options: writing assignments are straightforward and the programming sticks to basic Python with Pandas and NumPy, but the number of short and almost meaningless essays was tedious. In my course feedback, I said I’d prefer a few larger AI/ML projects to numerous thought‑experiment papers. It also bothered me that some of the models being tested were no longer supported or maintained which made completing assignments more difficult.</p>
+
+<p>My suggestion for anyone thinking about taking this course is to consider if there’s nothing else you can take. The topic is an important and interesting one, but I feel like the course needs an overhaul to really make it worthy of OMSCS.</p>
+
+<h2 id="my-thoughts-on-taking-two-courses-at-once">My Thoughts on Taking Two Courses at Once</h2>
+
+<p>My plan for the program has shifted a few times since I started in Fall 2023. During AMA I saw that one class a term for more than three years, on top of a full‑time job and family life, would be rough, so I decided to double up for two semesters to save time. After taking Software Development Processes (SDP) and AI, Ethics and Society (AIES) together, I changed my mind. The pair took fewer total hours than Graduate Intro to Operating Systems, but finishing work Sunday, waking up to fresh projects Monday, and the constant context switching between two syllabi and deadlines nearly burned me out. I felt like I worked twice as hard and learned half as much, so if you’re working full‑time, I wouldn’t recommend taking two courses in one term.</p>
+
+<h2 id="closing-thoughts">Closing Thoughts</h2>
+
+<p>I think the OMSCS program is great and one that is benefiting me directly every day. I expect a lot of utility out of the degree once I have it, and I don’t plan on continuing academically after this. I highly doubt a PhD is in my future mostly because I don’t think it would be worth the time and effort for me. If you’re reading this looking for guidance then that’s the key takeaway here; What will benefit you and is worth your time and effort? OMSCS is a great program and worth considering, but make sure it aligns with your goals first!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Overview]]></summary></entry><entry><title type="html">Learning from my mistakes in C</title><link href="/posts/2023/12/cmistakes/" rel="alternate" type="text/html" title="Learning from my mistakes in C" /><published>2023-12-20T00:00:00+00:00</published><updated>2023-12-20T00:00:00+00:00</updated><id>/posts/2023/12/cmistakes</id><content type="html" xml:base="/posts/2023/12/cmistakes/"><![CDATA[<p>I’m brushing up on and learning more C in preparation for my upcoming Georgia Tech course <strong>CS6200: Graduate Introduction to Operating Systems</strong>. In this particular instance, I was learning binary file input/output from Beej’s guide. I wanted to give myself an extra challenge and use functions for reading and writing to the file. I had already completed a similar task where I wrote and read strings from a file, so I figured this couldn’t be <em>that</em> much different.</p>
+
+<p>Things seemed to go fine until I read the bytes back from that file and got way more back than I had put in. I could already see the issue manifesting as I stepped through with a debugger. Below is the code in question. If you know C then you can probably see the problem, and maybe even other less obvious ones. If you do, please bear with me. I am acutely aware of the fact that I’m only just grasping some of these concepts.</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="cp">
+</span>
+<span class="cp">#define BUFFER 5
+</span>
+<span class="kt">void</span> <span class="nf">readBytes</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">fileName</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="o">*</span><span class="n">bytes</span><span class="p">);</span>
+<span class="kt">void</span> <span class="nf">writeBytes</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">fileName</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="o">*</span><span class="n">bytes</span><span class="p">,</span> <span class="kt">int</span> <span class="n">bufferSize</span><span class="p">);</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="err"> </span> <span class="err"> </span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">c</span><span class="p">[</span><span class="n">BUFFER</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">10</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">69</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">7</span><span class="p">};</span>
+<span class="err"> </span> <span class="err"> </span> <span class="kt">char</span> <span class="n">fileName</span><span class="p">[]</span> <span class="o">=</span> <span class="s">"myfile.bin"</span><span class="p">;</span>
+  
+<span class="err"> </span> <span class="err"> </span> <span class="n">writeBytes</span><span class="p">(</span><span class="n">fileName</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">BUFFER</span><span class="p">);</span>
+<span class="err"> </span> <span class="err"> </span> <span class="n">readBytes</span><span class="p">(</span><span class="n">fileName</span><span class="p">,</span> <span class="n">c</span><span class="p">);</span>
+
+<span class="err"> </span> <span class="err"> </span> <span class="n">getchar</span><span class="p">();</span> <span class="c1">// Clunky execution pause so I can see output</span>
+<span class="err"> </span> <span class="err"> </span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">readBytes</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">fileName</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="o">*</span><span class="n">bytes</span><span class="p">)</span> <span class="p">{</span>
+<span class="err"> </span> <span class="err"> </span> <span class="kt">FILE</span> <span class="o">*</span><span class="n">fp</span> <span class="o">=</span> <span class="n">fopen</span><span class="p">(</span><span class="n">fileName</span><span class="p">,</span> <span class="s">"rb"</span><span class="p">);</span>
+
+<span class="err"> </span> <span class="err"> </span> <span class="k">while</span><span class="p">(</span><span class="n">fread</span><span class="p">(</span><span class="n">bytes</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">fp</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="n">printf</span><span class="p">(</span><span class="s">"%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="o">*</span><span class="n">bytes</span><span class="p">);</span>
+<span class="err"> </span> <span class="err"> </span> <span class="n">fclose</span><span class="p">(</span><span class="n">fp</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">writeBytes</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">fileName</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="o">*</span><span class="n">bytes</span><span class="p">,</span> <span class="kt">int</span> <span class="n">bufferSize</span><span class="p">)</span> <span class="p">{</span>
+<span class="err"> </span> <span class="err"> </span> <span class="kt">FILE</span> <span class="o">*</span><span class="n">fp</span> <span class="o">=</span> <span class="n">fopen</span><span class="p">(</span><span class="n">fileName</span><span class="p">,</span> <span class="s">"wb"</span><span class="p">);</span>
+
+<span class="err"> </span> <span class="err"> </span> <span class="n">fwrite</span><span class="p">(</span><span class="n">bytes</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">bytes</span><span class="p">),</span> <span class="n">bufferSize</span><span class="p">,</span> <span class="n">fp</span><span class="p">);</span> <span class="c1">// Hint: issue on this line</span>
+<span class="err"> </span> <span class="err"> </span> <span class="n">fclose</span><span class="p">(</span><span class="n">fp</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>There’s a pretty obvious error here that I’ll get to in a moment, but I’m just figuring things out and didn’t even notice it. All I knew was my file was getting more bytes than expected. I tried running code directly from Beej’s (without the functions) and it worked fine, so it was my code that was the problem. I decided to run it through <code class="language-plaintext highlighter-rouge">strace</code> to see if there was a use case for it here.</p>
+<h3 id="tracing-system-calls">Tracing system calls</h3>
+<p>I started with the two short programs from Beej’s guide on reading and writing binary files. I used <code class="language-plaintext highlighter-rouge">pstree -p</code> to find the PID I wanted and then <code class="language-plaintext highlighter-rouge">strace -fp</code> to follow the execution of the script. I used <code class="language-plaintext highlighter-rouge">getchar()</code> to pause execution at the beginning of the main function since I don’t know any other way to do so at the moment. I could have used <code class="language-plaintext highlighter-rouge">strace -fp 9</code> to follow the system calls directly from bash, but bash tends to make extra noise that I didn’t want. The programs functioned correctly and returned the following starting with binary writing and then binary reading.</p>
+
+<p><img src="/images/posts/mysterybytes/strace3.JPG" alt="pstree of binwritetest.exe and strace of PID" /></p>
+
+<p><img src="/images/posts/mysterybytes/strace4.JPG" alt="pstree of binreadtest.exe and strace of PID" /></p>
+
+<p>In both examples, you can see <code class="language-plaintext highlighter-rouge">openat</code> open the file with attributes like ‘read-only’ for reading and ‘write-only’, ‘create’, and ‘truncate’ for writing. In the case of writing, the image at the top, you get a single write syscall that writes the bytes to the file. The read program has more write syscalls because it’s writing the data from the file to STDOUT. Hence the slight difference between the two writes: <code class="language-plaintext highlighter-rouge">write(3, data, buffer size)</code> and <code class="language-plaintext highlighter-rouge">write(1, data, buffer size)</code>. The 1 and 3 are file-descriptors that tell the system call where it’s writing data. The file-descriptor (fd) 1 is for STDOUT and fd 3 is the opened file. You can clearly see where it’s reading from and writing to by looking at the read/write syscalls.</p>
+
+<p>Now that we’ve got that out of the way, lets see what my program looks like.</p>
+
+<p><img src="/images/posts/mysterybytes/strace7.JPG" alt="Compiling and running my broken program, and getting back lots of bytes" /></p>
+
+<p>Oh boy, yea, that’s more than the 5 bytes in the array I created. Similarly, if you open each file up using a hex editor you see the following.</p>
+
+<p><img src="/images/posts/mysterybytes/strace5.JPG" alt="HxD of Beej's output file" /></p>
+
+<p><img src="/images/posts/mysterybytes/strace6.JPG" alt="HxD of my broken program" /></p>
+
+<p>The first image is the working program from Beej’s, and the second is the file from my program. It’s more than the initial 5 bytes that I was expecting. The output of <code class="language-plaintext highlighter-rouge">strace</code> for my program is similarly running off the edge of my screenshot, but there’s something else to see there too.</p>
+
+<p><img src="/images/posts/mysterybytes/strace8.JPG" alt="pstree and strace of broken program showing many byte writes to STDOUT" /></p>
+
+<p>Take a look at the first <code class="language-plaintext highlighter-rouge">write(3, ...</code> above. It’s unusual because it’s way long and contains the name of the output file. That’s…. not right….</p>
+
+<p>At this point <code class="language-plaintext highlighter-rouge">strace</code> wasn’t going to help me further, and I already had an idea of what was happening.</p>
+
+<h3 id="break-out-the-debugger">Break out the debugger</h3>
+<p>I used GDB to look into the program because I not only wanted to see the problem in the program, but I wanted to look into the program stack as well. I removed the <code class="language-plaintext highlighter-rouge">getchar()</code> in main since I no longer needed it, I set a breakpoint at the <code class="language-plaintext highlighter-rouge">writeBytes()</code> function, and I ran the debugger. I asked for help from ChatGPT, which, while not entirely useful, did guide me towards the correct answer. The image below covers the debugger output just after setting the breakpoint and running the program.</p>
+
+<p><img src="/images/posts/mysterybytes/strace11.JPG" alt="Debugger showing program execution and the stack" /></p>
+
+<p>A lot is going on here, so let me explain. From the top where it says “(gdb) step”:</p>
+<ul>
+  <li>I took a step into the program to the line where the file is opened</li>
+  <li>I ran <code class="language-plaintext highlighter-rouge">x/10xb bytes</code> which says “examine the first 10 bytes in hexadecimal format at the memory address for variable bytes”</li>
+  <li>I ran it again, this time for 20 bytes because I wanted to see a little more</li>
+</ul>
+
+<p>Notice the red boxes and numbering. The output to STDOUT is in decimal (base 10) so I needed to convert the hex (base 16) to decimal so I could compare outputs. The hex 0x6d is 109 in decimal and confirmed what I believed to be the issue. I messed up in my program and my write function was writing binary data from the stack and into my file. The numbers 1 through 5 in red show the numbers that were put into the file from the program array <code class="language-plaintext highlighter-rouge">unsigned char c[]</code>, and everything after that is coming from memory outside of the array.</p>
+
+<p>If you didn’t discover the issue initially allow me to explain it now.</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">writeBytes</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">fileName</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="o">*</span><span class="n">bytes</span><span class="p">,</span> <span class="kt">int</span> <span class="n">bufferSize</span><span class="p">)</span> <span class="p">{</span>
+<span class="err"> </span> <span class="err"> </span> <span class="kt">FILE</span> <span class="o">*</span><span class="n">fp</span> <span class="o">=</span> <span class="n">fopen</span><span class="p">(</span><span class="n">fileName</span><span class="p">,</span> <span class="s">"wb"</span><span class="p">);</span>
+
+<span class="err"> </span> <span class="err"> </span> <span class="n">fwrite</span><span class="p">(</span><span class="n">bytes</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">bytes</span><span class="p">),</span> <span class="n">bufferSize</span><span class="p">,</span> <span class="n">fp</span><span class="p">);</span> <span class="o">&lt;---</span> <span class="n">The</span> <span class="n">problem</span> <span class="n">is</span> <span class="n">here</span>
+<span class="err"> </span> <span class="err"> </span> <span class="n">fclose</span><span class="p">(</span><span class="n">fp</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The write function <code class="language-plaintext highlighter-rouge">fwrite()</code> takes the following parameters (left to right):</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">bytes</code> - The pointer to the array of elements to be written</li>
+  <li><code class="language-plaintext highlighter-rouge">sizeof(bytes)</code> - The size in bytes of each element</li>
+  <li><code class="language-plaintext highlighter-rouge">bufferSize</code> - The number of elements</li>
+  <li><code class="language-plaintext highlighter-rouge">fp</code> - The pointer to the FILE object</li>
+</ul>
+
+<p>The issue is at the <code class="language-plaintext highlighter-rouge">sizeof(bytes)</code> because bytes is a <em>pointer</em>! The pointer is 4 bytes in size whereas the correct size I needed, <code class="language-plaintext highlighter-rouge">sizeof(unsigned char)</code>, is 1 byte! I was telling my program to write 4 times more information than I meant to! This explains why, rather than writing 5 bytes of data I was writing 20 bytes of data. As such, the program just kept going right off into the stack and writing data from there. When it read the bytes back I got more than I expected.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+<p>I fixed the bug and my program worked flawlessly. I didn’t catch the mistake initially because I was handling a lot of concepts that were new to me. I also discovered that yes, <code class="language-plaintext highlighter-rouge">strace</code> is useful, but sometimes you just gotta break out the debugger and look at the code directly.  Hopefully if you’ve made it this far you’ve learned something. I know I did!</p>
+
+<p>Sources used:</p>
+
+<p><a href="https://stackoverflow.com/questions/5256599/what-are-file-descriptors-explained-in-simple-terms">Stack Overflow - File Descriptors</a></p>
+
+<p><a href="https://www.tutorialspoint.com/c_standard_library/c_function_fwrite.htm">Tutorials Point - fwrite()</a></p>
+
+<p><a href="https://www.man7.org/linux/man-pages/man2/write.2.html">Man page for write(2)</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[An exercise in learning from my mistakes while learning C programming]]></summary></entry><entry><title type="html">Process Investigation with strace</title><link href="/posts/2023/10/straceinvestigation/" rel="alternate" type="text/html" title="Process Investigation with strace" /><published>2023-10-23T00:00:00+00:00</published><updated>2023-10-23T00:00:00+00:00</updated><id>/posts/2023/10/straceinvestigation</id><content type="html" xml:base="/posts/2023/10/straceinvestigation/"><![CDATA[<p>I was working on upgrading an application and ran across an issue that unexpectedly led me to a few valuable learning experiences in Linux OS processes. The upgrade I was performing involved upgrading the appliance from an RPM.</p>
+
+<p>The process is typically fairly simple, just stop the services from the terminal and run the package updates using the <code class="language-plaintext highlighter-rouge">rpm -U {package name}</code> command. The first part of the update went off without a hitch, but the problems started when I attempted the second update.</p>
+
+<p>I ran the update command again, got a few steps in, then….. nothing. The process just stopped with zero feedback. The process <em>appeared</em> to be running, but it sat there for a long while doing nothing. This situation is not uncommon in IT, where systems may seem unresponsive for an extended period but are, in fact, working in the background (looking at you diskpart).</p>
+
+<p>I wasn’t being particularly patient because the first update completed in seconds, so I had the expectation that this would do the same. Since this was not the case I decided to look into it.</p>
+
+<h3 id="is-it-really-stuck-or-is-it-just-me">Is it really stuck, or is it just me?</h3>
+<p>Off the top of my head, I recalled a couple of checks I could perform: <code class="language-plaintext highlighter-rouge">ps aux</code> for showing all processes on the system, and <code class="language-plaintext highlighter-rouge">lsof -p {PID}</code> for listing the files opened under the specific PID for the RPM. In the end, all this got me was confirmation the RPM process was running, and it was using the files I was expecting. It was still stuck though, so I went searching for other answers.</p>
+
+<p>I got a few suggestions and checked out <code class="language-plaintext highlighter-rouge">/proc/{PID}/status</code> to see what the state of the process was. To my surprise, the RPM process was sleeping!</p>
+
+<p><img src="/images/posts/strace/LinuxProc1.JPG" alt="proc file process example" /></p>
+
+<p>(example process above. Note the “sleeping” state of the process)</p>
+
+<p>This provided at least some explanation. If it’s sleeping it must be waiting on something, but what could it possibly be waiting for? Fortunately, <code class="language-plaintext highlighter-rouge">strace -p {PID}</code> helped solve that problem by informing me that it was waiting for a different process. The form of the output from this command was:</p>
+
+<p><code class="language-plaintext highlighter-rouge">wait4({PID}</code></p>
+
+<p>Okaaay… so I’ll run through the process with this new PID which happened to be /bin/bash doing some other RPM processing. Turns out this one is sleeping too! What gives? I run the <code class="language-plaintext highlighter-rouge">strace -p {PID}</code>on this PID as well and get something a little more cryptic:</p>
+
+<p><code class="language-plaintext highlighter-rouge">wait4(-1,</code></p>
+
+<p>The first one had the PID, which made more sense, but -1 is not a PID, and I have no mental reference for it. Dr. Google it is, then! I end up finding that <code class="language-plaintext highlighter-rouge">wait4(-1,</code> is the same as <code class="language-plaintext highlighter-rouge">wait3()</code> which according to the <a href="https://refspecs.linuxfoundation.org/LSB_1.3.0/gLSB/gLSB/baselib-wait4-2.html">Linux Foundation</a> means “wait for any child process…”. Great, so the thing causing my primary RPM task to sleep, is itself sleeping because it’s waiting on a different child process!</p>
+
+<p>Since I wasn’t given a PID for the new process I have to go digging in the process list again. This time I’m using <code class="language-plaintext highlighter-rouge">pstree -p</code> to give a visual representation of the process parent/child relationships, and include the PID for the processes. I grep and find the processes are part of a long chain ending in a <code class="language-plaintext highlighter-rouge">chmod</code> process. Chmod is used for modifying file system object access attributes. Interesting, why is chmod holding up the effort?</p>
+
+<p>I proceed this time straight to <em>strace</em> and I immediately get a running list of function calls. Finally some good news! The process is running, but what is it doing? I spend a couple seconds looking at the output and notice some familiar file names. Turns out chmod is updating the attributes of a bunch of files as what I came to assume was part of the migration process that it runs during an update. I could see the files were running in alphabetical order, so I decided to be patient and wait.</p>
+
+<p>Eventually the chmod process did finish and the whole RPM update completed successfully. As an IT professional I should know by now that patience is a virtue, but why wait when you can investigate!</p>
+
+<p>The takeaways I got out of this whole endeavor are:</p>
+<ul>
+  <li>To check the state of a process, check the process info in <code class="language-plaintext highlighter-rouge">/proc/{PID}/status</code>. You can quickly see what the state of the process is. There are other ways to do this I’m sure, as there’s always a dozen ways to complete the same task. BTW, this is a file so you’ll need to <code class="language-plaintext highlighter-rouge">cat</code> or <code class="language-plaintext highlighter-rouge">less</code> to see the contents, i.e. <code class="language-plaintext highlighter-rouge">less /proc/{PID}/status</code>.</li>
+  <li>I’ve used strace before, but this gave me a greater appreciation for the command as a tool for checking hung processes. It can be a great troubleshooting tool, so <a href="https://strace.io/">here’s some more info.</a></li>
+  <li>I need to remember pstree as a command for checking parent/child process relationships. There are times in problem investigations where this is important, such as it was for me.</li>
+  <li>Keep asking why. Why is the process sleeping? Why is this other process sleeping? Why is strace showing wait4(-1,? Why is chmod running? 5 Whys for root cause analysis.</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Using strace to uncover the reasons behind stuck processes]]></summary></entry><entry><title type="html">Doom 30th Anniversary</title><link href="/posts/2023/12/doom30thanniversary" rel="alternate" type="text/html" title="Doom 30th Anniversary" /><published>2023-10-23T00:00:00+00:00</published><updated>2023-10-23T00:00:00+00:00</updated><id>/posts/2023/12/doom30thanniversary</id><content type="html" xml:base="/posts/2023/12/doom30thanniversary"><![CDATA[<p>Doom turns 30 this Sunday, December 10th, and in celebration of that milestone, I’m going to list some of my all-time favorite mods and WADs. I started playing Doom on my aunt’s Windows 95 computer during my grade school years, and it has since evolved into my most treasured and frequently played video games. The number of mods that the community has created makes this a game that never becomes outdated. Moreover, Doom has received a few updated games since then with Doom 3 back in the early 2000s, Doom (2016), and Doom Eternal and DLCs The Ancient Gods Part 1 and 2.</p>
+
+<p>I also want to give a shoutout to Half-Life, which recently celebrated its 25th anniversary. I believe it’s equally influential for its role in shaping modern-day video games. Where Doom reshaped the FPS overall, Half-Life transformed storytelling and world-building in video games and Half-Life: Alyx finally made virtual reality seem like more than a novelty or gimmick.</p>
+
+<p>However, I digress. Where Doom shines is not solely in the official releases, but in the modding community and the artists who continue to create add-ons and entirely new games from this historic title. Without further ado, here are my personal favorites from the past 30 years.</p>
+
+<h2 id="prodoomer"><a href="https://www.moddb.com/mods/prodoomer-v3">Prodoomer</a></h2>
+<p><img src="/images/posts/doom/prodoomer1.jpg" width="500" /></p>
+
+<p>Prodoomer is a total conversion mod, meaning it significantly alters some or all major aspects of the original game. This mod features 33 maps, a leveling system, boss fights, and character upgrades, making the game feel more like an RPG FPS than a straight shooter. Obviously, there is still plenty of shooting, but the addition of player levels, experience points, and the option to backtrack on levels from a central hub changes that experience. Some of the larger maps can be a bit tedious to clear, but I’ve spent hours in this game and look back on it fondly. Honestly, it’s an excellent mod for those seeking a comprehensive redesign of the base game.</p>
+
+<h2 id="doom-slayer-chronicles"><a href="https://www.moddb.com/mods/doom-slayer-chronicles">Doom Slayer Chronicles</a></h2>
+<p><img src="/images/posts/doom/DSC.png" width="500" /></p>
+
+<p>I can’t quite recall where I first came across this mod. Unlike Prodoomer, it isn’t a total conversion, but rather a map pack that, in some ways, feels like one. The game showcases some of the most insane looking maps I’ve ever seen come out of a Doom mod. It’s been a while since I last played it, but I recall it feeling something akin to Dante’s Inferno, where you delve deeper into the abyss. The maps take you through graveyards, cathedrals, UAC facilities, and the very plains of Hell itself. As a “simple” map pack, this mod is typically compatible with gameplay mods that I’ll discuss like Brutal Doom and Complex Doom, elevating the gameplay to new heights. I highly recommend this mod for its extraordinary detail and the intense, dark atmosphere.</p>
+
+<h2 id="brutal-doom"><a href="https://www.moddb.com/mods/brutal-doom">Brutal Doom</a></h2>
+<p><img src="/images/posts/doom/brutal.jpg" width="500" /></p>
+
+<p>One does not simply talk about Doom and not give Brutal Doom it’s due recognition. Brutal Doom is a gameplay enhancement mod that changes some aspects of the game in a substantial way, but not completely like a total conversion. This makes it incompatible with some mods, but generally map WADs are fine to use. Brutal Doom adds sounds, weapons, weapon skins, player and demon interactions, and new styles of combat to make Doom even more… brutal. There is also a “Black Edition” that makes the game even more realistic and difficult for those who seek even more out of this already epic mod.</p>
+
+<h2 id="live-through-doom-lit-doom"><a href="https://www.moddb.com/mods/litdoom-survival-gameplay">Live Through Doom (LiT Doom)</a></h2>
+<p><img src="/images/posts/doom/litdoom.jpg" width="500" /></p>
+
+<p>Brutal Doom Black Edition might require tactics and strategy to navigate the added realism, but LiT Doom is a straight-up survival horror FPS. Live Through Doom is another gameplay enhancement mod that adds a completely new feel to how Doom is played. The straightforward run-and-gun approach is no longer viable. This mod adds stamina, bleeding, poison, and realism that mean you can no longer afford to be shot, burned, scratched, or bitten without serious repercussions. It also incorporates crafting mechanics, allowing players to create items such as bandages for healing, various stimulants for character buffs, and even ammunition crafting and weapon repair. I return to LiT Doom when I feel like I need something more than the base Doom experience, and it delivers a challenge every time.</p>
+
+<h2 id="complex-doom-and-legendary-complex-addon-and"><a href="https://www.moddb.com/mods/complex-doom">Complex Doom and Legendary Complex Addon and….</a></h2>
+<p><img src="/images/posts/doom/lcfd.png" width="500" /></p>
+
+<p>What do I even say about this mod? It’s a phenomenal partial conversion that introduces a vast array of new enemies and weapons. The sheer volume of additional <em>everything</em> put into this mod makes it one of the absolute best mods out there. It features formidable enemies - legendary, enraged legendary, nemesis, and vexed nemesis - that will absolutely wreck you if you don’t have the right equipment (and sometimes even if you do). Moreover, the mod features epic music, a diverse array of formidable enemies, innovative weapons, and tiered monster levels to prevent immediate overwhelming of players. This mod remains one of my all-time favorites; its replay value is outstanding, and I find myself returning to it time and again. The variety of mods that come with this pack are partially playable with GZDoom, but they play best on for the Zandronum source port for which they are made.</p>
+
+<h2 id="myhousewad"><a href="https://www.doomworld.com/forum/topic/134292-myhousewad/">Myhouse.wad</a></h2>
+<p><img src="/images/posts/doom/myhouse.jpg" width="500" /></p>
+
+<p>Don’t let the quaint image fool you, this is a horror mod of epic proportions. Released in March 2023 this map quickly became one of the most popular and talked about mods in the community. I could fill an entire post just talking about this WAD, but I’ll save you the details and say that it starts with a story about the passing of a friend and reminiscing about their friendship. The game quickly turns from curiosity, to unease, to completely unhinged in short order. When you play it you just get further and further into the rabbit hole, and then come to find out the damn hole just keeps going! I still need to go back to this mod and find the pieces I am still missing despite at least 15 playthroughs. No need to add gameplay enhancements to this WAD. It stands alone.</p>
+
+<h2 id="ancient-aliens"><a href="https://www.doomworld.com/forum/topic/87784-ancient-aliens-final-version-on-idgames/">Ancient Aliens</a></h2>
+<p><img src="/images/posts/doom/aa.jpg" width="500" /></p>
+
+<p>Moving on to more map only mods, this is a 32-level megawad containing unique, surprising, and colorful levels replete with hellspawn. This wad will many times force you into situations where you have to run rather than fight, at least initially. It includes two new enemies that don’t typically add a whole lot to the game in my opinion, but can become buggy when adding certain gameplay mods. I play this map pack frequently for its expansive and unique level designs, relative difficulty, and the overarching story that keeps things interesting.</p>
+
+<h2 id="back-to-saturn-x"><a href="https://www.doomworld.com/idgames/levels/doom2/megawads/btsx_e1">Back to Saturn X</a></h2>
+<p><img src="/images/posts/doom/b2s.jpg" width="500" /></p>
+
+<p>Back to Saturn X is a well-known series of megawads, of which I’ve only so far played episode 2. Each episode contains about 28 levels each with unique designs and original music. Maps contain everything from large and target-rich environments to small, quiet hallways that keep you guessing as to what is going to happen next. Some build previews were recently released for the third and final episode which I assume will contain an approximately equal number of levels, making this series a mammoth megawad series.</p>
+
+<h2 id="30-years-of-doom">30 Years of Doom</h2>
+
+<p>I’m going to stop my list here, but this isn’t to say this is all there is. Mods exist to change every aspect of the game or add to it including the addition of shaders, new HUDs, 3D voxel models, weapon selection mods, lighting and colors, liquid textures, weapon-only mod packs, enemy redesigns, and the list keeps going. The Doom from the 90’s continues to this day because of the modding community making it something you can keep coming back to over and over. I don’t know what the next 30 years will bring, but one thing is certain: The Doom Slayer will be there, and Hell’s coming with him.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Doom's 30th birthday]]></summary></entry><entry><title type="html">My Experience In the NYU Bridge</title><link href="/posts/2023/08/nyubridge/" rel="alternate" type="text/html" title="My Experience In the NYU Bridge" /><published>2023-08-14T00:00:00+00:00</published><updated>2023-08-14T00:00:00+00:00</updated><id>/posts/2023/08/nyubridge</id><content type="html" xml:base="/posts/2023/08/nyubridge/"><![CDATA[<h2 id="preface-a-meta-commentary-on-this-revision">Preface: A Meta-commentary on this revision</h2>
+
+<p>I decided to rewrite this article because I felt that it was too tongue-in-cheek for my liking. I know this is my experience and I tend to be a little sarcastic, but I don’t want this to come off as a joke post or something like that. I want to get my point across that this is difficult yet rewarding program to complete if you feel compelled to pursue Computer Science graduate school. Hopefully this revision is better and gives the reader a more complete view of both my thoughts and the facts of the program as it was when I worked through it in early 2022.</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>I want to say first and foremost, thanks to my wonderful wife who quite literally held the house together while I was locked away in my room for 24 weeks. Thank you!!!</p>
+
+<p>My journey toward Computer Science has been a long, meandering path that, had I known then what I know now, would have been more direct from the outset. My first 
+Undergraduate degree is in Business Administration where I took a course in Web Design that ultimately lead me to my career in Information Technology and Cybersecurity. However, and this is debated in some Cybersecurity circles, I’ve come more and more to believe that, if you really want to succeed in Cybersecurity, you should know at least a little about programming. I’d even say that about System Administration to the point where you should have some ability in PowerShell, Bash, or Python. These programming and scripting languages give you a huge edge over those who don’t know how to use them. That’s not to say you can’t have a successful career without it, but it sets you apart if you do. I don’t want this to seem like gatekeeping in any way. If you don’t know how to program and want to work in Cybersecurity, do it. I didn’t know any programming when I started out either, which is why I’m here.</p>
+
+<p>That digression aside, after getting my second undergraduate degree in Cybersecurity, and being rejected from a Cybersecurity graduate program, I decided to do what I should have done all along: get some formal Computer Science training. Sure I could do Leetcode or Udacity, but in this case I wanted something more on the rigorous, deadline-focused side. I can’t remember how exactly I heard about it, but I enrolled in the NYU Tandon School of Engineering Computer Science Bridge Program sometime in late 2021 for the program starting spring 2022. My end goal was really to use it to help me get into Georgia Tech’s OMSCS program. It turned out to be one of the most difficult programs I’ve ever attempted.</p>
+
+<h2 id="the-nyu-cs-bridge-program">The NYU CS Bridge Program</h2>
+
+<p>The NYU CS Bridge Program (going forward I will just call it “the Bridge Program”) is “A pathway for individuals without a STEM background to a graduate degree in computer science and a career in an in-demand field”.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> The program is really meant for non-STEM background individuals to show that they can complete a graduate level CS degree and, if they complete the program you can use it as part of your NYU graduate application. A B+ or higher gets you a Certificate of Distinction and a C or higher gets a Certification of Completion.</p>
+
+<p>The program has two options, a 17-week and a 24-week program, that run concurrently but are separately taught. There is a mix of reading, online videos, and in-person teaching and discussion. I took the 24-week program, and unless you have a significant amount of time on your hands, or already know a decent amount of math and programming, I’d recommend doing the same. The initial 11 weeks encompass a blend of mathematical and programming problems. During the first week, you’ll have approximately 80 math problems, primarily focusing on binary, octal, decimal, and hexadecimal calculations, as well as discrete mathematics logic equations. After that expect between three and six programming problems on top of regular math reading and equation assignments. The programs start relatively simple, for example, create a program that writes a triangle to console using a certain character, or a program that takes input from a user for an amount of money and returns the minimum number of coinage to make that amount (i.e. $1.25 = 5 quarters).  It quickly ramps up into sorting arrays, using and dereferencing pointers, and finally ending in the later weeks with linked lists used to navigate a database.</p>
+
+<p>The math covered in the program is primarily Discrete Algebra and Probability and Statistics. I did not have a great deal of mathematics in my background, so imagine my surprise when I was first introduced to proofs! Yes, there are about two weeks worth of mathematical proofs if I remember correctly. There was no calculus, though looking back I think calculus could have helped some with the asymptotic equations. The program covers Induction, Bayes Theorem, Set Theory, and permutations and combinations. It was a lot of math I had never seen before, but I ended up doing okay with a lot of it.</p>
+
+<p>The program ends with operating system and network theory such as CPU operations, the OSI model, processes and threads, etc. I didn’t end up completing this part because at this point I was burned out and wasn’t making a passing grade. I more or less already know a lot of this so I’m glad it was at the end.</p>
+
+<h2 id="my-experience-with-the-bridge">My Experience With The Bridge</h2>
+
+<p>Well, it was going well, but ultimately I ended up not making the cut. Not that I was <em>trying</em> to get into NYU. The certificate ultimately didn’t matter as I was accepted into the OMSCS program after I took some courses at the local community college. I’m not mad or defeated that I didn’t pass. I learned so much from the program that it was definitely worth the time and cost. I don’t want to downplay the difficulty of the program though. Our cohort started out with almost 500 people and ended with something like 289. I don’t have the number in front of me, but it was something like half the class dropped within the first 12 weeks. I don’t blame them, it hits you quickly that this program is going to take a huge amount of time and effort to make anything close to resembling a passing grade.</p>
+
+<p>I consider myself to be pretty good at studying, remembering foundational topics, and taking exams. For example, I passed the CISSP exam my first try with only a couple months of careful studying and preparation. Compared to the NYU Bridge however, the CISSP might as well have been a color by numbers. An important point to keep in mind if you haven’t begun yet: assignments must be submitted as typed documents, such as PDFs or Word files. I strongly advise getting comfortable with LaTeX <em>BEFORE</em> beginning this program; it significantly simplifies handling math assignments. I can’t imagine trying to use the MS Word WYSIWYG paradigm for getting equations to look correct. Don’t be like me and learn LaTeX while trying to also finish your assignments; learn it now!</p>
+
+<p>I don’t want to discourage anyone, but I want you to understand what you’re getting yourself into. I was in the 24-week program, I already had some knowledge of programming like if/else statements, switch statements, classes, some data structures, and data types. I work in IT and have a B.S. in Cybersecurity, and I was taking math courses on Khan Academy. I still couldn’t make the grade to pass. If I hadn’t had at least that much I probably would have failed long before I did.</p>
+
+<p>Like I said, I made it into Georgia Tech after taking Intermediate Programming, Pre-Calculus, Trigonometry, and Calculus 1. These might have helped with the Bridge Program, but honestly the work just ended up being too much for me. That being said a number of my cohort did make the grade and ended up with Certificates of Distinction. I applaud them for their efforts and ability to stick with it to the end. They deserve it, which leads me to my last comment. The people in the program are awesome. I highly recommend being active in the Slack groups and getting to know your group. They’re all highly intelligent, hard working, and a great group that you might end up staying connected with after the program. Among all the things I gained from this program, I would highlight that getting to know them was the greatest part.</p>
+
+<p>Hopefully this helps clear up some things and gives you an idea of what to expect. If you choose to proceed then I wish you the best of luck. Don’t give up, and do your best. I believe in you!</p>
+
+<p>– Gabriel</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p>https://engineering.nyu.edu/academics/programs/nyu-tandon-bridge/nyu-tandon-bridge-computer-science <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name></name></author><summary type="html"><![CDATA[A short summary on my experience with the NYU Bridge and what you can expect]]></summary></entry><entry><title type="html">On Book Summaries</title><link href="/posts/2021/03/bookfutures/" rel="alternate" type="text/html" title="On Book Summaries" /><published>2021-03-14T00:00:00+00:00</published><updated>2021-03-14T00:00:00+00:00</updated><id>/posts/2021/03/bookfutures</id><content type="html" xml:base="/posts/2021/03/bookfutures/"><![CDATA[<p>Greetings all! I wanted to say that I am taking book updates off of the main page and just posting them to my “Book Summaries” page. I’m thinking it’s going to get awfully crowded if I start posting every book summary I write on my home page. I have probably read or listened to about 40 or 50 books since I started listening to audio books in 2017. I’ll need to count, and it’s short of where I wish I could be which is more like 20 to 30 books every year. It’s not that I never read before that, I just didn’t read that much, and honestly, audio books are one of the best investments I’ve ever made. I listen to fiction, non-fiction, audio dramas, all of it. The only downside to audio books is that I usually listen while I’m driving and can’t take notes I sometimes wish so desperately to do. Still, despite what I miss out on in notes, I want to share some of these books and the basics of their premise in the hopes that others will be persuaded into reading them as well.</p>
+
+<p>I’m going to try hard to not only post more book reviews, but make more posts about stuff I have worked on. I participated in the SANS Holiday Hack this year and it was pretty awesome. I already have the screenshots from my playthrough, I just need to get the post done. That and I have a couple reverse engineering and exploit books (oh god more books!) that I might write about as I learn more about said subjects. Those might help me get more code done as well, which is also lacking. Man, I’m such a slacker… ;)</p>
+
+<p>Anyway, in the future, if you want to see more book stuff go on over to the <a href="../Books/">Books</a> link, and hopefully I will have more posted there very soon. I’ll also try to write more too, because it’s important to me to be a creator and not just a consumer. For myself and my own personal growth, and for others who might be interested.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Greetings all! I wanted to say that I am taking book updates off of the main page and just posting them to my “Book Summaries” page. I’m thinking it’s going to get awfully crowded if I start posting every book summary I write on my home page. I have probably read or listened to about 40 or 50 books since I started listening to audio books in 2017. I’ll need to count, and it’s short of where I wish I could be which is more like 20 to 30 books every year. It’s not that I never read before that, I just didn’t read that much, and honestly, audio books are one of the best investments I’ve ever made. I listen to fiction, non-fiction, audio dramas, all of it. The only downside to audio books is that I usually listen while I’m driving and can’t take notes I sometimes wish so desperately to do. Still, despite what I miss out on in notes, I want to share some of these books and the basics of their premise in the hopes that others will be persuaded into reading them as well.]]></summary></entry><entry><title type="html">Hardware Hacking 1</title><link href="/posts/2021/01/hwhacking/" rel="alternate" type="text/html" title="Hardware Hacking 1" /><published>2021-01-07T00:00:00+00:00</published><updated>2021-01-07T00:00:00+00:00</updated><id>/posts/2021/01/hwhacking</id><content type="html" xml:base="/posts/2021/01/hwhacking/"><![CDATA[<p>The other day I made my first attempt at figuring out how to get started with hardware hacking. I try to get practice with various techniques and platforms wherever I can whether it be websites and cross-site scripting or command injection, or like this post will try to show, how I got started figuring out how to see the inner working of hardware or embedded systems. Before I start though I should say that I got a lot of help from looking at posts from @cybergibbons and <a href="https://cybergibbons.com/">his website</a>. The hardest part about getting started was knowing what exactly was needed to start. His posts and videos on the “how” of it was invaluable to taking even the smallest step.</p>
+
+<p>That being said, I have found lately that I have a lot of extra or broken hardware laying around that I need to take to recycling for disposal. In the meantime, I chose a Zyxel Q1000 router as a candidate for disassembly and evaluation since it is way past its prime and potentially breaking it wasn’t going to deter me. For the last several years I had been using the device as a modem and bridge for a router that I had bought separately. After moving away from the DSL provider out here I no longer needed it, and so I decided to use it as my first victim.</p>
+
+<p><img src="/images/posts/hardware/q1000z.jpg" alt="" /></p>
+
+<p>My goal here was to see if I could make heads or tails of the process of identifying, connecting to, and retrieving serial data from a UART (Universal Asynchronous Receiver-Transmitter) connection on the board itself. Upon opening the case and looking at the device the most prominent feature is the metal case over a Broadcom chip, alongside the wires running across the board to each of the antenna ports.</p>
+
+<p><img src="/images/posts/hardware/q1000z_open.jpg" alt="" /></p>
+
+<p>You might be able to see in the image above the 4 pins at the top right of the device. That is the UART serial connection labeled “J2” and has 4 pins with one… missing? I spent some time testing the pins and figuring out the correct order (more on that below), and what I discovered the pin order to be is:</p>
+
+<p><img src="/images/posts/hardware/pin_labeled.jpg" alt="" /></p>
+
+<p>For the next part, actually connecting to the UART, I used an old laptop running Ubuntu, a <a href="https://www.amazon.com/Sabrent-4-Port-Individual-Switches-HB-UM43/dp/B00JX1ZS5O/">power-cycling USB hub</a>, <a href="https://www.amazon.com/IZOKEE-CP2102-Converter-Adapter-Downloader/dp/B07D6LLX19/">a serial-to-USB adapter</a>, and some <a href="https://www.amazon.com/JIUWU-Test-Ideal-Electronic-Experiment/dp/B00NHG8Q5U/">test clips</a>. The connection to the device requires that you connect RXD to TXD, TXD to RXD, and GND to GND.</p>
+
+<p><img src="/images/posts/hardware/usb_end.jpg" alt="" /></p>
+
+<p><img src="/images/posts/hardware/router_end.jpg" alt="" /></p>
+
+<p>Okay, so now your device is connected to the USB, the USB to the hub, and the hub to your computer. Now you need a way to retrieve the data. Minicom is a serial communication and terminal emulator that we can use to read information from the serial connection. When you turn on the hub on Linux you get a device called /dev/ttyUSB0 which can be found by running dmesg. Minicom allows you to configure settings for the serial device you will be communicating with along with the baud rate settings (defaults shown).</p>
+
+<p><img src="/images/posts/hardware/minicom_terminal.jpg" alt="" /></p>
+
+<p>This is where I started to have to figure out how exactly to get the communication I wanted. I had previously attempted to connect to the device on a Windows machine and found that the serial channel was a COM channel. This is something I didn’t previously have any experience with, so it took me a few minutes to figure out where to even start looking. I didn’t have nearly as much trouble in Linux since dmesg gives you the channel you’re looking for. I assume you can also use PuTTY to do this, since it also offers serial connection options (maybe next time).</p>
+
+<p>The issue I had initially with Minicom was I only got garbage back. My first run where I actually saw something was full of random characters, and was obviously not correct. The baud rate at this time was set to 9600 so I tried some other settings. 38400 didn’t work either, but once I set the baud rate to 115200… viola! Data!</p>
+
+<h2 id="before-adjustment">Before Adjustment</h2>
+
+<p><img src="/images/posts/hardware/minicom_trash.png" alt="" /></p>
+
+<h2 id="after-adjustment">After Adjustment</h2>
+
+<p><img src="/images/posts/hardware/minicom_data.png" alt="" /></p>
+
+<p>I was amazed to see that I actually got this working! The communication running down the terminal showed the boot up process, and even still contained settings that I had entered into the device a long time ago when I was still using it as a router (rather than a bridge).</p>
+
+<p>Besides just seeing the information I next wanted to interact with the device through the serial connection and see if I can get into a shell from there. At this point I started having trouble with minicom and had to move to terminal emulator called GTKTerm. I was able to interact with the device through GTKTerm by stopping the boot countdown and entering into a CFE (Common Firmware Environment) terminal.</p>
+
+<p><img src="/images/posts/hardware/gtkterm.png" alt="" /></p>
+
+<p>Still no luck though, because as soon as I entered anything into the CFE the device froze and had to be restarted. I continued to mess with it a little longer to see if I had missed something, but no matter the result I never got past the CFE freeze. From here I decided to run the router as it was intended, as a router, and port scan it for the heck of it. From that I found the following ports open:</p>
+
+<p><img src="/images/posts/hardware/nmap.png" alt="" /></p>
+
+<p>I’m not sure why it was broadcasting all of this when none of it was turned on, but I couldn’t get into things like telnet without turning it on first. I chose not to look into this further and see if I could get in without turning it on, because at this point, I was a little bored with it, and felt I had achieved my goal of even getting this far into the process.</p>
+
+<p>All in all, I felt pretty good about this small undertaking and getting this far with the router. Now that I know how to do all this my next project will be looking at a DEFCON badge I have from a while back. I was never able to do too much with it because at that time I was still learning a lot of other things, and wasn’t much into hardware. We’ll see how that goes next time.</p>
+
+<p>Until then, thanks for reading!</p>
+
+<ul>
+  <li>G</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[The other day I made my first attempt at figuring out how to get started with hardware hacking...]]></summary></entry></feed>

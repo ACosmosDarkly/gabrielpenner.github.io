@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="/assets/main.css"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Process Investigation with strace | Gabriel Penner</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Process Investigation with strace" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Using strace to uncover the reasons behind stuck processes" />
+<meta property="og:description" content="Using strace to uncover the reasons behind stuck processes" />
+<link rel="canonical" href="/posts/2023/10/straceinvestigation/" />
+<meta property="og:url" content="/posts/2023/10/straceinvestigation/" />
+<meta property="og:site_name" content="Gabriel Penner" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-10-23T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Process Investigation with strace" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-10-23T00:00:00+00:00","datePublished":"2023-10-23T00:00:00+00:00","description":"Using strace to uncover the reasons behind stuck processes","headline":"Process Investigation with strace","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/2023/10/straceinvestigation/"},"url":"/posts/2023/10/straceinvestigation/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+  <link rel="preload" href="/assets/fonts/0xProto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
+</head>
+<body><header class="site-header">
+  <div class="site-nav-group nav-right-align">
+    
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav class="site-nav">
+      
+      
+      
+      
+
+      
+        <a href="/">Home</a>
+      
+
+      
+        
+          <a href="/reading/">Reading</a>
+        
+      
+
+      
+        <a href="/about/">About</a>
+      
+    </nav>
+  </div>
+</header>
+
+
+<main class="page-content" aria-label="Content">
+      <div class="main-text">
+        
+  <h1>Process Investigation with strace</h1>
+
+
+
+  <p class="date">October 23, 2023</p>
+ 
+
+<article class="page-content readable-text">
+  <p>I was working on upgrading an application and ran across an issue that unexpectedly led me to a few valuable learning experiences in Linux OS processes. The upgrade I was performing involved upgrading the appliance from an RPM.</p>
+
+<p>The process is typically fairly simple, just stop the services from the terminal and run the package updates using the <code class="language-plaintext highlighter-rouge">rpm -U {package name}</code> command. The first part of the update went off without a hitch, but the problems started when I attempted the second update.</p>
+
+<p>I ran the update command again, got a few steps in, then….. nothing. The process just stopped with zero feedback. The process <em>appeared</em> to be running, but it sat there for a long while doing nothing. This situation is not uncommon in IT, where systems may seem unresponsive for an extended period but are, in fact, working in the background (looking at you diskpart).</p>
+
+<p>I wasn’t being particularly patient because the first update completed in seconds, so I had the expectation that this would do the same. Since this was not the case I decided to look into it.</p>
+
+<h3 id="is-it-really-stuck-or-is-it-just-me">Is it really stuck, or is it just me?</h3>
+<p>Off the top of my head, I recalled a couple of checks I could perform: <code class="language-plaintext highlighter-rouge">ps aux</code> for showing all processes on the system, and <code class="language-plaintext highlighter-rouge">lsof -p {PID}</code> for listing the files opened under the specific PID for the RPM. In the end, all this got me was confirmation the RPM process was running, and it was using the files I was expecting. It was still stuck though, so I went searching for other answers.</p>
+
+<p>I got a few suggestions and checked out <code class="language-plaintext highlighter-rouge">/proc/{PID}/status</code> to see what the state of the process was. To my surprise, the RPM process was sleeping!</p>
+
+<p><img src="/images/posts/strace/LinuxProc1.JPG" alt="proc file process example" /></p>
+
+<p>(example process above. Note the “sleeping” state of the process)</p>
+
+<p>This provided at least some explanation. If it’s sleeping it must be waiting on something, but what could it possibly be waiting for? Fortunately, <code class="language-plaintext highlighter-rouge">strace -p {PID}</code> helped solve that problem by informing me that it was waiting for a different process. The form of the output from this command was:</p>
+
+<p><code class="language-plaintext highlighter-rouge">wait4({PID}</code></p>
+
+<p>Okaaay… so I’ll run through the process with this new PID which happened to be /bin/bash doing some other RPM processing. Turns out this one is sleeping too! What gives? I run the <code class="language-plaintext highlighter-rouge">strace -p {PID}</code>on this PID as well and get something a little more cryptic:</p>
+
+<p><code class="language-plaintext highlighter-rouge">wait4(-1,</code></p>
+
+<p>The first one had the PID, which made more sense, but -1 is not a PID, and I have no mental reference for it. Dr. Google it is, then! I end up finding that <code class="language-plaintext highlighter-rouge">wait4(-1,</code> is the same as <code class="language-plaintext highlighter-rouge">wait3()</code> which according to the <a href="https://refspecs.linuxfoundation.org/LSB_1.3.0/gLSB/gLSB/baselib-wait4-2.html">Linux Foundation</a> means “wait for any child process…”. Great, so the thing causing my primary RPM task to sleep, is itself sleeping because it’s waiting on a different child process!</p>
+
+<p>Since I wasn’t given a PID for the new process I have to go digging in the process list again. This time I’m using <code class="language-plaintext highlighter-rouge">pstree -p</code> to give a visual representation of the process parent/child relationships, and include the PID for the processes. I grep and find the processes are part of a long chain ending in a <code class="language-plaintext highlighter-rouge">chmod</code> process. Chmod is used for modifying file system object access attributes. Interesting, why is chmod holding up the effort?</p>
+
+<p>I proceed this time straight to <em>strace</em> and I immediately get a running list of function calls. Finally some good news! The process is running, but what is it doing? I spend a couple seconds looking at the output and notice some familiar file names. Turns out chmod is updating the attributes of a bunch of files as what I came to assume was part of the migration process that it runs during an update. I could see the files were running in alphabetical order, so I decided to be patient and wait.</p>
+
+<p>Eventually the chmod process did finish and the whole RPM update completed successfully. As an IT professional I should know by now that patience is a virtue, but why wait when you can investigate!</p>
+
+<p>The takeaways I got out of this whole endeavor are:</p>
+<ul>
+  <li>To check the state of a process, check the process info in <code class="language-plaintext highlighter-rouge">/proc/{PID}/status</code>. You can quickly see what the state of the process is. There are other ways to do this I’m sure, as there’s always a dozen ways to complete the same task. BTW, this is a file so you’ll need to <code class="language-plaintext highlighter-rouge">cat</code> or <code class="language-plaintext highlighter-rouge">less</code> to see the contents, i.e. <code class="language-plaintext highlighter-rouge">less /proc/{PID}/status</code>.</li>
+  <li>I’ve used strace before, but this gave me a greater appreciation for the command as a tool for checking hung processes. It can be a great troubleshooting tool, so <a href="https://strace.io/">here’s some more info.</a></li>
+  <li>I need to remember pstree as a command for checking parent/child process relationships. There are times in problem investigations where this is important, such as it was for me.</li>
+  <li>Keep asking why. Why is the process sleeping? Why is this other process sleeping? Why is strace showing wait4(-1,? Why is chmod running? 5 Whys for root cause analysis.</li>
+</ul>
+
+</article>
+
+
+      </div>
+    </main><footer class="site-footer">
+  <div class="footer-links">
+    <a href="https://linkedin.com/in/gabrieldpenner" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="https://github.com/ACosmosDarkly" target="_blank" rel="noopener noreferrer">GitHub</a>
+  </div>
+</footer>
+</body>
+
+</html>
