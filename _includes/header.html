@@ -15,7 +15,12 @@
       {% assign nav_links = site.pages | where: "nav", true %}
       {% assign home_link = nav_links | where: "title", "Home" | first %}
       {% assign about_link = nav_links | where: "title", "About" | first %}
-      {% assign other_links = nav_links | where_exp: "l", "l.title != 'Home' and l.title != 'About'" %}
+      {% assign other_links = "" | split: "" %}
+      {% for link in nav_links %}
+        {% unless link.title == "Home" or link.title == "About" %}
+          {% assign other_links = other_links | push: link %}
+        {% endunless %}
+      {% endfor %}
 
       {% if home_link and home_link.url != page.url %}
         <a href="{{ home_link.url | relative_url }}">{{ home_link.title }}</a>
